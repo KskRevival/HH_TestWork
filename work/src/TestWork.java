@@ -10,8 +10,8 @@ public class TestWork {
         int n = sc.nextInt();
         sc.close();
 
-        TestWorkWithLists.neededFunction(n);
-        TestWorkWithArrays.neededFunction(n);
+        ArrayList<Integer[]> listOfArrays = TestWorkWithLists.neededFunction(n);
+        Integer[][] arrayOfArrays = TestWorkWithArrays.neededFunction(n);
     }
 
     protected static int getRandomInt(){
