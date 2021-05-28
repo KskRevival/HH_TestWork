@@ -4,14 +4,18 @@ public class TestWork {
     protected static final long BITS32 = 4294967296L;
     protected static final long BITS16 = 2147483648L;
     protected static ArrayList<Integer> lenControl = new ArrayList<Integer>();
-
-    public static void main(String[] args) {
+    
+    public void run(){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         sc.close();
 
         ArrayList<Integer[]> listOfArrays = TestWorkWithLists.neededFunction(n);
-        Integer[][] arrayOfArrays = TestWorkWithArrays.neededFunction(n);
+        Integer[][] arrayOfArrays = TestWorkWithArrays.neededFunction(n);        
+    }
+    
+    public static void main(String[] args) {
+        new TestWork.run();
     }
 
     protected static int getRandomInt(){
